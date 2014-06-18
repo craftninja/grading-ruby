@@ -1,5 +1,5 @@
 class Grading
-  def grade(grades)
+  def differences(grades)
     diff = []
     grades.each_with_index do |grade, index|
       diff << :up if grades[index+1] && grade < grades[index+1]
